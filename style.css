@@ -1,0 +1,432 @@
+:root {
+  --primary: #32C36C;
+  --dark: #1A2A36;
+  --light: #F9F9F9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: var(--dark);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Feature Section */
+.features {
+  background: var(--light);
+  padding: 40px 0;
+}
+
+.feature-box {
+  text-align: center;
+  width: 250px;
+  margin: 20px;
+}
+
+.feature-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.feature-box h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+/* System Info Section */
+.system-info {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.system-info h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.info-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon-box {
+  font-size: 18px;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Mobile-friendly section padding */
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+@media (max-width: 575.98px) {
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    h1, .display-4 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .navbar .navbar-nav .nav-link {
+        padding: 10px 8px;
+        font-size: 1rem;
+    }
+    .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+    .p-4 {
+        padding: 1rem !important;
+    }
+}.text-shadow {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+/* Align home section text to the left on all screen sizes */
+#home .container {
+        text-align: left !important;
+    }     
+    
+/* Align Home section heading and paragraph to the left */
+ #home h1, p {
+            text-align: left !important;
+        }    
+/* Reduce navbar height and padding */
+ .navbar {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            min-height: 20px;
+        }
+        
+.navbar .navbar-brand {
+            font-size: 1.2rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+
+.navbar .navbar-nav .nav-link {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+/* Make About section image fit full height and left side */
+#about .col-md-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+    min-height: 300px;
+    max-height: 500px;
+    display: block;
+}
+@media (max-width: 767.98px) {
+    #about .col-md-6 img {
+        height: auto;
+        max-height: 300px;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Contact Section Modern Two-Column Layout */
+#contact .contact-text {
+    background: #fff;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    min-height: 400px;
+}
+#contact .form-control, #contact textarea.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+}
+#contact .btn-primary {
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+#contact iframe {
+    border-radius: 0 1rem 1rem 0;
+    min-height: 400px;
+    border: none;
+}
+@media (max-width: 991.98px) {
+    #contact .contact-text,
+    #contact iframe {
+        border-radius: 1rem !important;
+    }
+    #contact .contact-text {
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 767.98px) {
+    #contact .contact-text,
+    #contact iframe {
+        border-radius: 0.5rem !important;
+        min-height: 250px;
+    }
+    #contact .p-lg-5 {
+        padding: 1.5rem !important;
+    }
+}/* Make contact form fit well and look good on all devices */
+#contact .card {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    background: #fff;
+}
+
+#contact .card-body {
+    padding: 2rem;
+}
+
+#contact input.form-control,
+#contact textarea.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e0;
+    box-shadow: none;
+    font-size: 1rem;
+}
+
+#contact .btn-primary {
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 575.98px) {
+    #contact .card-body {
+        padding: 1rem;
+    }
+    #contact .card {
+        max-width: 100%;
+        border-radius: 0.5rem;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    color: #adb5bd;
+    font-size: 1rem;
+    background: #222;
+}
+
+.footer h5 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.footer a.btn-link {
+    color: #adb5bd;
+    text-decoration: none;
+    display: block;
+    padding: 0.25rem 0;
+    transition: color 0.2s;
+}
+.footer a.btn-link:hover {
+    color: #0099ff;
+    text-decoration: underline;
+}
+
+.footer .btn-social {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #adb5bd;
+    background: transparent;
+    color: #fff;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.footer .btn-social:hover {
+    background: #0099ff;
+    color: #fff;
+    border-color: #0099ff;
+}
+
+.footer .img-fluid {
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer .form-control {
+    border-radius: 2rem;
+    background: #343a40;
+    color: #fff;
+    border: none;
+}
+.footer .form-control:focus {
+    background: #23272b;
+    color: #fff;
+    border: 1px solid #0099ff;
+    box-shadow: none;
+}
+
+.footer .btn-primary {
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #0099ff;
+    border: none;
+}
+.footer .btn-primary:hover {
+    background: #0056b3;
+}
+
+.footer .copyright {
+    border-top: 1px solid #343a40;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: #adb5bd;
+}
+
+@media (max-width: 767.98px) {
+    .footer .row > div {
+        margin-bottom: 2rem;
+    }
+    .footer .copyright {
+        text-align: center !important; }
+    }
+/* Footer Address Section Enhancement */
+.footer .fa-map-marker-alt,
+.footer .fa-phone-alt,
+.footer .fa-envelope {
+    color: #0099ff;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+.footer p.mb-2 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+}
+
+@media (max-width: 767.98px) {
+    .footer p.mb-2 {
+        font-size: 0.95rem;
+    }
+}
+
+/* Newsletter input and button visibility in footer */
+.footer .form-control {
+    background: #fff;
+    color: #222;
+    border: 1px solid #0099ff;
+    border-radius: 2rem;
+    font-size: 1rem;
+    box-shadow: none;
+}
+
+.footer .form-control:focus {
+    background: #f1f7ff;
+    color: #222;
+    border: 1.5px solid #0099ff;
+    outline: none;
+}
+
+.footer .btn-primary {
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #0099ff;
+    border: none;
+    color: #fff;
+}
+
+.footer .btn-primary:hover {
+    background: #0056b3;
+    color: #fff;
+}
+/* Make newsletter paragraph in footer more visible */
+.footer .col-lg-3 .mb-4 + p {
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Minimise footer height and width for a more compact look */
+.footer {
+    padding-top: 2rem !important;
+    padding-bottom: 1rem !important;
+    font-size: 0.97rem;
+}
+
+.footer .container.py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.footer h5 {
+    margin-bottom: 1rem !important;
+    font-size: 1.1rem;
+}
+
+.footer .row.g-5 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}
+
+.footer .img-fluid {
+    margin-bottom: 0.25rem;
+}
+
+.footer .form-control {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-size: 0.97rem;
+}
+
+.footer .btn-primary,
+.footer .btn {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 0.97rem;
+}
+
+.footer .copyright {
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.93rem;
+}
+
+@media (max-width: 991.98px) {
+    .footer .container.py-5 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .footer .row.g-5 {
+        --bs-gutter-x: 0.75rem;
+        --bs-gutter-y: 1rem;
+    }
+}
